@@ -5,7 +5,8 @@ set(CMAKE_BUILD_TYPE "Release")
 add_definitions("-DENABLE_SSE")
 set(CMAKE_CXX_FLAGS "-std=c++11 ${SSE_FLAGS} -g -O3 -march=native")
 
-find_package(OpenCV 4 REQUIRED)
+set(CMAKE_PREFIX_PATH "/home/dji/herui/opencv4") 
+find_package(OpenCV  REQUIRED)
 find_package(Sophus REQUIRED)
 find_package(Pangolin REQUIRED)
 
